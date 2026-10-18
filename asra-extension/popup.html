@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; background: #020617; color: white; font-family: sans-serif; margin: 0; padding: 20px; }
+    .header { border-bottom: 1px solid #1e293b; padding-bottom: 10px; margin-bottom: 15px; }
+    .status-badge { font-size: 10px; color: #3b82f6; letter-spacing: 2px; font-weight: bold; }
+    .verdict-card { padding: 15px; border-radius: 12px; text-align: center; margin-top: 10px; }
+    .phish { background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; color: #ef4444; }
+    .safe { background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #10b981; }
+    .info-text { font-size: 11px; margin-top: 15px; color: #94a3b8; font-style: italic; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div style="font-weight: 900; font-size: 18px;">ASRA <span style="color: #2563eb;">2.0</span></div>
+    <div class="status-badge">AUTONOMOUS AUDIT</div>
+  </div>
+
+  <div id="result">
+    <div id="verdictBox" class="verdict-card">
+      <div id="statusLabel" style="font-weight: 900; font-size: 22px;">STANDBY</div>
+      <div id="probLabel" style="font-size: 12px; margin-top: 5px;">Awaiting URL...</div>
+    </div>
+    <div class="info-text" id="tipsLabel">Navigate to any website to begin neural analysis.</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ASRA: Autonomous Guard",
+  "version": "2.0",
+  "description": "Fully automatic real-time AI URL auditing.",
+  "permissions": ["tabs", "notifications", "storage"],
+  "host_permissions": ["http://localhost:8000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
